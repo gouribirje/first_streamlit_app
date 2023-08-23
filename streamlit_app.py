@@ -11,7 +11,7 @@ def get_fruit_list():
 
 def insert_fruit(fruitchoice):
    with my_cnx.cursor() as my_cur:
-      my_cur.execute("insert into FRUIT_LOAD_LIST values (" + fruitchoice+ )")
+      my_cur.execute("insert into FRUIT_LOAD_LIST values (" + fruitchoice+ ")")
       return "thanks for adding "+fruitchoice
 
 streamlit.title('My Parents New Healthy Diner')
